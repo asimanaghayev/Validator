@@ -4,7 +4,7 @@ A simple library to cleanly validate on-screen input views. You can update your 
 Demo
 ---
 
-![Demo](./media/Validator Demo.gif)
+![Demo](./media/Demo.gif)
 
 ### Setup
 
