@@ -4,7 +4,7 @@ A simple library to cleanly validate on-screen input views. You can update your 
 Demo
 ---
 
-![Demo](./art/Validator Demo.gif)
+![Demo](./media/Validator Demo.gif)
 
 ### Setup
 
@@ -21,7 +21,7 @@ dependencies {
 
 ### Usage
 
-## Input Field
+#### Input Field
 You have implement `Validatable` interface in your input field. 2 methods will be implemented in this view
 
 **Validity State of View**
@@ -52,7 +52,7 @@ override val isValid: Boolean
 ```
 
 
-## Output View
+#### Output View
 For output field you have to implement `Verifier` interface.
 
 **Updating Output on validity change**
@@ -65,7 +65,7 @@ override fun onValid(isValid: Boolean) {
 } 
 ```
 
-## Binding Validator views and Verifier
+#### Binding Verifier and Validatable views
 You have add this line to your activity/fragment for validation binding
 First variable is your Verifier view then you can add all of your Validatable views, there is no Validatable view limit
 
