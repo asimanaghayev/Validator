@@ -4,7 +4,7 @@ A simple library to cleanly validate on-screen input views. You can update your 
 Demo
 ---
 
-![Demo](./media/Demo.gif)
+<img src="/media/Demo.gif" width="107" height="168">
 
 ### Setup
 
