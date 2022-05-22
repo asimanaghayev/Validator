@@ -5,18 +5,16 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
 import com.asiman.validator.Verifier
 
-class CustomButton : AppCompatButton, Verifier {
+class CustomButton @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0,
+) : AppCompatButton(context, attrs, defStyleAttr), Verifier {
 
-    constructor(context: Context) : super(context)
-
-    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
-
-    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context,
-        attrs,
-        defStyleAttr)
-
+    /**
+     *  Enabling button if validator informs that all inputs are valid
+     */
     override fun onValid(isValid: Boolean) {
-        // Enabling button if validator informs that all inputs are valid
         isEnabled = isValid
     }
 }
