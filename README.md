@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.github.asimanaghayev:Validator:0.1.0'
+  implementation 'com.github.asimanaghayev:Validator:v0.1.1'
 }
 ```
 
