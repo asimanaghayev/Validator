@@ -8,11 +8,17 @@ import androidx.appcompat.widget.AppCompatEditText
 import com.asiman.validator.Validatable
 import com.asiman.validator.Validator
 
-class CustomEditText @JvmOverloads constructor(
-    context: Context,
-    attrs: AttributeSet? = null,
-    defStyleAttr: Int = 0,
-) : AppCompatEditText(context, attrs, defStyleAttr), Validatable {
+class CustomEditText : AppCompatEditText, Validatable {
+
+    constructor(context: Context) : super(context)
+
+    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
+
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
+        context,
+        attrs,
+        defStyleAttr
+    )
 
     /**
      * Custom Edit text is valid if text is entered

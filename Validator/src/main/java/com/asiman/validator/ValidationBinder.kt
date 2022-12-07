@@ -65,6 +65,7 @@ class ValidationBinder internal constructor(
         for (validatable in validatables) {
             validatable?.setupValidationListener(this)
         }
+        checkAll()
     }
 
     override fun checkAll() {
