@@ -71,6 +71,6 @@ First variable is your Verifier view then you can add all of your Validatable vi
 
 **Binding**
 ```kotlin
-ValidationBinder.bind(bindind.btnContinue, bindind.inputFirst, bindind.inputSecond)
+ValidationBinder.bind(binding.btnContinue, binding.inputFirst, binding.inputSecond)
 ```
 
